@@ -1,9 +1,5 @@
 #include "main.h"
-int statusinit,statusread;
-char buf[5];
-void BH1750_Init();
-int BH1750_Read();	//Function Prototype
-void Delay(volatile uint32_t nCount);
+
 int main(){
   SystemInit();
   UB_LCD_Init();
@@ -17,10 +13,9 @@ int main(){
   UB_Font_DrawString(5,10,"STM32F429-BH1750 TEST",&Arial_11x18,RGB_COL_BLUE,RGB_COL_GREEN);
   UB_I2C3_Init();
   BH1750_Init();
-
+  Delay(50000000);
   while(1){
 	  int lux;
-	  char buf[5];
 	  lux = BH1750_Read();
 	  if(lux >= 0){
 		  sprintf(buf,"Lux = %d",lux);
@@ -39,9 +34,11 @@ void BH1750_Init(){
 	*/
 	statusinit = UB_I2C3_WriteByte(0x23<<1,0x00,0x10);
 	if(statusinit == 0){
+		/* Print Initialization Ok! */
 		UB_Font_DrawString(10,40,"Init Ok!",&Arial_11x18,RGB_COL_BLUE,RGB_COL_GREEN);
 	}
 	else {
+		/* Print Initialization Error ID */
 		sprintf(buf,"Init Failed : %d", statusinit);
 		UB_Font_DrawString(10,40,buf,&Arial_11x18,RGB_COL_RED,RGB_COL_GREEN);
 	}
@@ -50,15 +47,17 @@ void BH1750_Init(){
 int BH1750_Read(){
 	/* Do not read if init failed before */
 	if(statusinit < 0){
+		/* Blink RED LED if init failed */
 		UB_Led_Toggle(LED_RED);
 		statusread = -10;
 		return statusread;
 	}
-	UB_Led_Toggle(LED_GREEN);
 	uint16_t val;
 	/* Check if any error occur from I2C communication */
 	statusread = UB_I2C3_ReadMultiByte(0x23<<1,0x00,2);
 	if(statusread == 0){
+		/* Blink GREEN LED if read is done */
+		UB_Led_Toggle(LED_GREEN);
 		/* Luminous Calculation */
 		val=((I2C3_DATA[0]<<8)|I2C3_DATA[1])/1.2;
 		/* Return calculated luminosity */
