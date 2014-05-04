@@ -75,7 +75,7 @@ void UB_I2C3_Init(void)
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
   GPIO_InitStructure.GPIO_OType = GPIO_OType_OD;
-  GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_UP;
+  GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_NOPULL;
 
   // SCL-Pin
   GPIO_InitStructure.GPIO_Pin = I2C3DEV.SCL.PIN;
