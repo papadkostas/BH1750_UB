@@ -11,10 +11,10 @@
 // Module   : GPIO, I2C 
 // Funktion : I2C-LoLevel-Funktionen (I2C-3)
 //
-// Hinweis  : mögliche Pinbelegungen
+// Hinweis  : mï¿½gliche Pinbelegungen
 //            I2C3 : SCL :[PA8] 
 //                   SDA :[PC9]
-//            externe PullUp-Widerstände an SCL+SDA notwendig
+//            externe PullUp-Widerstï¿½nde an SCL+SDA notwendig
 //--------------------------------------------------------------
 
 
@@ -125,7 +125,7 @@ int16_t UB_I2C3_ReadByte(uint8_t slave_adr, uint8_t adr)
     if(timeout!=0) timeout--; else return(P_I2C3_timeout(-2));
   }  
 
-  // ADDR-Flag löschen
+  // ADDR-Flag lï¿½schen
   I2C3->SR2;
 
   timeout=I2C3_TIMEOUT;
@@ -157,7 +157,7 @@ int16_t UB_I2C3_ReadByte(uint8_t slave_adr, uint8_t adr)
     if(timeout!=0) timeout--; else return(P_I2C3_timeout(-6));
   }
 
-  // ADDR-Flag löschen
+  // ADDR-Flag lï¿½schen
   I2C3->SR2;
 
   timeout=I2C3_TIMEOUT;
@@ -209,14 +209,14 @@ int16_t UB_I2C3_WriteByte(uint8_t slave_adr, uint8_t adr, uint8_t wert)
     if(timeout!=0) timeout--; else return(P_I2C3_timeout(-2));
   }  
 
-  // ADDR-Flag löschen
+  // ADDR-Flag lï¿½schen
   I2C3->SR2;
 
   timeout=I2C3_TIMEOUT;
   while (!I2C_GetFlagStatus(I2C3, I2C_FLAG_TXE)) {
     if(timeout!=0) timeout--; else return(P_I2C3_timeout(-3));
   }
-
+  /*
   // Adresse senden
   I2C_SendData(I2C3, adr);
 
@@ -224,6 +224,7 @@ int16_t UB_I2C3_WriteByte(uint8_t slave_adr, uint8_t adr, uint8_t wert)
   while (!I2C_GetFlagStatus(I2C3, I2C_FLAG_TXE)) {
     if(timeout!=0) timeout--; else return(P_I2C3_timeout(-4));
   }
+  /*
 
   // Daten senden
   I2C_SendData(I2C3, wert);
@@ -287,7 +288,7 @@ int16_t UB_I2C3_ReadMultiByte(uint8_t slave_adr, uint8_t adr, uint8_t cnt)
     if(timeout!=0) timeout--; else return(P_I2C3_timeout(-2));
   }
 
-  // ADDR-Flag löschen
+  // ADDR-Flag lï¿½schen
   I2C3->SR2;
 
   timeout=I2C3_TIMEOUT;
@@ -319,7 +320,7 @@ int16_t UB_I2C3_ReadMultiByte(uint8_t slave_adr, uint8_t adr, uint8_t cnt)
     if(timeout!=0) timeout--; else return(P_I2C3_timeout(-6));
   }
 
-  // ADDR-Flag löschen
+  // ADDR-Flag lï¿½schen
   I2C3->SR2;
 
   // alle Daten auslesen
@@ -358,7 +359,7 @@ int16_t UB_I2C3_ReadMultiByte(uint8_t slave_adr, uint8_t adr, uint8_t cnt)
 // slave_adr => I2C-Basis-Adresse vom Slave
 // adr       => Start Register Adresse ab der beschrieben wird
 // cnt       => Anzahl der Bytewert die geschrieben werden sollen
-// Daten die geschrieben werden sollen, müssen in "I2C3_DATA" stehen
+// Daten die geschrieben werden sollen, mï¿½ssen in "I2C3_DATA" stehen
 //
 // Return_wert :
 //    0   , Ok
@@ -389,7 +390,7 @@ int16_t UB_I2C3_WriteMultiByte(uint8_t slave_adr, uint8_t adr, uint8_t cnt)
     if(timeout!=0) timeout--; else return(P_I2C3_timeout(-2));
   }
 
-  // ADDR-Flag löschen
+  // ADDR-Flag lï¿½schen
   I2C3->SR2;
 
   timeout=I2C3_TIMEOUT;
