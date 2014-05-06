@@ -3,7 +3,6 @@
 int main(){
   SystemInit();
   UB_LCD_Init();
-  UB_Led_Init();
   UB_LCD_LayerInit_Fullscreen();
   UB_LCD_SetLayer_1();
   UB_LCD_FillLayer(RGB_COL_WHITE);

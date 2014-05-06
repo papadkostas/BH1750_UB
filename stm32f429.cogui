@@ -17,17 +17,22 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="D:/My Documents/GitHub/BH1750_UB/main.c" title="main.c" tooltip="D:/My Documents/GitHub/BH1750_UB/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="14" selectionOffset="459" selectionTopPixel="135"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="550" selectionTopPixel="45"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="BH1750.c" partName="BH1750.c" path="D:/My Documents/GitHub/BH1750_UB/BH1750/BH1750.c" title="BH1750.c" tooltip="D:/My Documents/GitHub/BH1750_UB/BH1750/BH1750.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/BH1750/BH1750.c"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="488" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="BH1750.h" partName="BH1750.h" path="D:/My Documents/GitHub/BH1750_UB/BH1750/BH1750.h" title="BH1750.h" tooltip="D:/My Documents/GitHub/BH1750_UB/BH1750/BH1750.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/BH1750/BH1750.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="732" selectionTopPixel="210"/>
 </editor>
 </editors>
 <views>
@@ -174,8 +179,8 @@
 <hide_menu_item_id id="org.coocox.builder.rcp.flashMenu"/>
 <hide_menu_item_id id="org.coocox.builder.ui.debug"/>
 <hide_menu_item_id id="org.coocox.builder.ui.showHelpViewAction"/>
-<hide_menu_item_id id="org.coocox.builder.ui.newFile"/>
 <hide_menu_item_id id="org.coocox.builder.ui.showHelpViewAction1"/>
+<hide_menu_item_id id="org.coocox.builder.ui.newFile"/>
 <hide_menu_item_id id="org.coocox.builder.ui.actions.ConfigurationAction"/>
 <hide_menu_item_id id="org.coocox.builder.ui.builderDefaultLayout"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.source.menu"/>
@@ -196,8 +201,8 @@
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <hide_toolbar_item_id id="org.coocox.builder.ui.build"/>
 <hide_toolbar_item_id id="org.coocox.welcome.ui.action.welcome"/>
-<hide_toolbar_item_id id="org.coocox.component.ui.ShowRepositoryAction"/>
 <hide_toolbar_item_id id="org.coocox.codebugger.configuration.coideProgramDownloadAction"/>
+<hide_toolbar_item_id id="org.coocox.component.ui.ShowRepositoryAction"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.debug.ui.BreakpointView"/>
@@ -283,109 +288,12 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/main.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/BH1750/BH1750.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/main.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/BH1750/BH1750.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/BH1750/BH1750.h"/>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor/>
+</editor>
 </editors>
-<item historyLabel="main.c" index="1">
-<position info="not_deleted" x="525" y="38"/>
-</item>
-<item historyLabel="main.h" index="3">
-<position info="not_deleted" x="797" y="0"/>
-</item>
-<item historyLabel="BH1750.c" index="0">
-<position/>
-</item>
-<item historyLabel="main.c" index="1">
-<position info="not_deleted" x="436" y="0"/>
-</item>
-<item historyLabel="BH1750.c" index="0">
-<position info="not_deleted" x="825" y="77"/>
-</item>
-<item historyLabel="BH1750.c" index="0">
-<position info="not_deleted" x="459" y="0"/>
-</item>
-<item historyLabel="main.h" index="3">
-<position info="not_deleted" x="797" y="0"/>
-</item>
-<item historyLabel="BH1750.c" index="0">
-<position info="not_deleted" x="459" y="0"/>
-</item>
-<item historyLabel="BH1750.h" index="2">
-<position/>
-</item>
-<item historyLabel="BH1750.c" index="0">
-<position info="not_deleted" x="459" y="0"/>
-</item>
-<item historyLabel="BH1750.c" index="0">
-<position info="not_deleted" x="965" y="0"/>
-</item>
-<item historyLabel="BH1750.c" index="0">
-<position info="not_deleted" x="453" y="37"/>
-</item>
-<item historyLabel="BH1750.c" index="0">
-<position info="not_deleted" x="527" y="0"/>
-</item>
-<item historyLabel="BH1750.c" index="0">
-<position info="not_deleted" x="488" y="0"/>
-</item>
-<item historyLabel="main.c" index="1">
-<position info="not_deleted" x="436" y="0"/>
-</item>
-<item historyLabel="main.c" index="1">
-<position info="not_deleted" x="413" y="0"/>
-</item>
-<item historyLabel="main.c" index="1">
-<position info="not_deleted" x="413" y="0"/>
-</item>
-<item historyLabel="BH1750.c" index="0">
-<position info="not_deleted" x="488" y="0"/>
-</item>
-<item historyLabel="BH1750.h" index="2">
-<position/>
-</item>
-<item historyLabel="BH1750.c" index="0">
-<position info="not_deleted" x="437" y="0"/>
-</item>
-<item historyLabel="main.c" index="1">
-<position info="not_deleted" x="445" y="0"/>
-</item>
-<item historyLabel="BH1750.c" index="0">
-<position info="not_deleted" x="437" y="0"/>
-</item>
-<item historyLabel="BH1750.c" index="0">
-<position info="not_deleted" x="453" y="37"/>
-</item>
-<item historyLabel="BH1750.c" index="0">
-<position/>
-</item>
-<item historyLabel="BH1750.c" index="0">
-<position info="not_deleted" x="453" y="37"/>
-</item>
-<item historyLabel="BH1750.c" index="0">
-<position info="not_deleted" x="618" y="0"/>
-</item>
-<item historyLabel="BH1750.c" index="0">
-<position info="not_deleted" x="453" y="37"/>
-</item>
-<item historyLabel="BH1750.c" index="0">
-<position info="not_deleted" x="417" y="0"/>
-</item>
-<item historyLabel="main.c" index="1">
-<position info="not_deleted" x="507" y="0"/>
-</item>
-<item historyLabel="BH1750.c" index="0">
-<position info="not_deleted" x="417" y="0"/>
-</item>
-<item historyLabel="main.c" index="1">
-<position info="not_deleted" x="492" y="0"/>
-</item>
-<item historyLabel="BH1750.c" index="0">
-<position info="not_deleted" x="417" y="0"/>
-</item>
-<item historyLabel="BH1750.c" index="0">
-<position info="not_deleted" x="183" y="0"/>
-</item>
-<item historyLabel="BH1750.c" index="0">
-<position info="not_deleted" x="962" y="32"/>
-</item>
 <item historyLabel="BH1750.c" index="0">
 <position info="not_deleted" x="0" y="21"/>
 </item>
@@ -431,8 +339,108 @@
 <item historyLabel="BH1750.c" index="0">
 <position info="not_deleted" x="488" y="0"/>
 </item>
-<item active="true" historyLabel="main.c" index="1">
+<item historyLabel="main.c" index="1">
 <position info="not_deleted" x="663" y="0"/>
+</item>
+<item historyLabel="main.h" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="main.c" index="1">
+<position info="not_deleted" x="459" y="14"/>
+</item>
+<item historyLabel="BH1750.c" index="4">
+<position info="not_deleted" x="387" y="0"/>
+</item>
+<item historyLabel="BH1750.h" index="5">
+<position info="not_deleted" x="262" y="0"/>
+</item>
+<item historyLabel="BH1750.c" index="4">
+<position info="not_deleted" x="387" y="0"/>
+</item>
+<item historyLabel="BH1750.h" index="5">
+<position info="not_deleted" x="262" y="0"/>
+</item>
+<item historyLabel="BH1750.c" index="4">
+<position info="not_deleted" x="933" y="0"/>
+</item>
+<item historyLabel="BH1750.h" index="5">
+<position info="not_deleted" x="705" y="0"/>
+</item>
+<item historyLabel="Configuration" index="6"/>
+<item historyLabel="BH1750.h" index="5">
+<position info="not_deleted" x="732" y="0"/>
+</item>
+<item historyLabel="main.c" index="1">
+<position info="not_deleted" x="550" y="0"/>
+</item>
+<item historyLabel="BH1750.h" index="5">
+<position info="not_deleted" x="732" y="0"/>
+</item>
+<item historyLabel="BH1750.c" index="4">
+<position info="not_deleted" x="933" y="0"/>
+</item>
+<item historyLabel="main.c" index="1">
+<position info="not_deleted" x="550" y="0"/>
+</item>
+<item historyLabel="BH1750.h" index="5">
+<position info="not_deleted" x="732" y="0"/>
+</item>
+<item historyLabel="BH1750.c" index="4">
+<position info="not_deleted" x="933" y="0"/>
+</item>
+<item historyLabel="main.c" index="1">
+<position info="not_deleted" x="550" y="0"/>
+</item>
+<item historyLabel="main.c" index="1">
+<position info="not_deleted" x="34" y="0"/>
+</item>
+<item historyLabel="main.c" index="1">
+<position info="not_deleted" x="441" y="0"/>
+</item>
+<item historyLabel="main.c" index="1">
+<position info="not_deleted" x="438" y="0"/>
+</item>
+<item historyLabel="main.c" index="1">
+<position info="not_deleted" x="567" y="0"/>
+</item>
+<item historyLabel="main.c" index="1">
+<position info="not_deleted" x="563" y="0"/>
+</item>
+<item historyLabel="main.c" index="1">
+<position info="not_deleted" x="667" y="0"/>
+</item>
+<item historyLabel="main.c" index="1">
+<position info="not_deleted" x="665" y="0"/>
+</item>
+<item historyLabel="main.c" index="1">
+<position info="not_deleted" x="396" y="0"/>
+</item>
+<item historyLabel="main.c" index="1">
+<position info="not_deleted" x="438" y="0"/>
+</item>
+<item historyLabel="main.c" index="1">
+<position info="not_deleted" x="567" y="0"/>
+</item>
+<item historyLabel="main.c" index="1">
+<position info="not_deleted" x="563" y="0"/>
+</item>
+<item historyLabel="main.c" index="1">
+<position info="not_deleted" x="410" y="0"/>
+</item>
+<item historyLabel="main.c" index="1">
+<position info="not_deleted" x="438" y="0"/>
+</item>
+<item historyLabel="main.c" index="1">
+<position info="not_deleted" x="567" y="0"/>
+</item>
+<item historyLabel="main.c" index="1">
+<position info="not_deleted" x="671" y="0"/>
+</item>
+<item historyLabel="BH1750.c" index="4">
+<position info="not_deleted" x="488" y="0"/>
+</item>
+<item active="true" historyLabel="main.c" index="1">
+<position info="not_deleted" x="671" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -441,6 +449,11 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
+<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor" name="" tooltip="">
+<persistable>
+<org.coocox.builder.ui.editors.ConfigEditor/>
+</persistable>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="BH1750.h" tooltip="stm32f429/BH1750/BH1750.h">
 <persistable path="/stm32f429/BH1750/BH1750.h"/>
 </file>
@@ -473,6 +486,9 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_i2c.c" tooltip="stm32f429/cmsis_lib/source/stm32f4xx_i2c.c">
 <persistable path="/stm32f429/cmsis_lib/source/stm32f4xx_i2c.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="I2C1.c" tooltip="stm32f429/BH1750/I2C1.c">
+<persistable path="/stm32f429/BH1750/I2C1.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="I2C1.c" tooltip="stm32f429/BH1750/I2C1.c">
 <persistable path="/stm32f429/BH1750/I2C1.c"/>
