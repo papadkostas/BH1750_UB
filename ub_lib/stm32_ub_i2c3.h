@@ -66,8 +66,8 @@ typedef struct {
 //--------------------------------------------------------------
 void UB_I2C3_Init(void);
 int16_t UB_I2C3_ReadByte(uint8_t slave_adr, uint8_t adr);
-int16_t UB_I2C3_WriteByte(uint8_t slave_adr, uint8_t adr, uint8_t wert);
-int16_t UB_I2C3_ReadMultiByte(uint8_t slave_adr, uint8_t adr, uint8_t cnt);
+int16_t UB_I2C3_WriteByte(uint8_t slave_adr, uint8_t adr, uint8_t wert, uint8_t fixed);
+int16_t UB_I2C3_ReadMultiByte(uint8_t slave_adr, uint8_t adr, uint8_t cnt, uint8_t fixed);
 int16_t UB_I2C3_WriteMultiByte(uint8_t slave_adr, uint8_t adr, uint8_t cnt);
 void UB_I2C3_Delay(volatile uint32_t nCount);
 

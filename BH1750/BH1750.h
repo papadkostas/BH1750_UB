@@ -1,24 +1,43 @@
 //--------------------------------------------------------------
-// File     : main.h
+// File     : BH1750.h
 //--------------------------------------------------------------
 //--------------------------------------------------------------
-#ifndef __MAIN_H
-#define __MAIN_H
+#ifndef __BH1750_H
+#define __BH1750_H
 
 //--------------------------------------------------------------
 // Includes
 //--------------------------------------------------------------
-#include "stm32f4xx.h"
-#include "BH1750.h"
+#include "stm32_ub_lcd_ili9341.h"
+#include "stm32_ub_font.h"
+#include "stm32_ub_i2c3.h"
+#include "stm32_ub_led.h"
+#include <stdio.h>
 
 //--------------------------------------------------------------
 // Global Functions
 //--------------------------------------------------------------
-void Delay(volatile uint32_t nCount);
+uint16_t BH1750_Read(uint8_t mode);
+
+//--------------------------------------------------------------
+// Definitions
+//--------------------------------------------------------------
+#define DEBUG
+#define POWER_OFF 			0x00
+#define POWER_ON			0x01
+#define RESET	 			0x07
+#define CONTINUOUS_H_1LX	0x10
+#define CONTINUOUS_H_0_5LX	0x11
+#define CONTINUOUS_L_4LX	0x13
+#define ONE_TIME_H_1LX		0x20
+#define ONE_TIME_H_0_5LX	0x21
+#define ONE_TIME_L_4LX		0x23
 
 //--------------------------------------------------------------
 // Global Variables
 //--------------------------------------------------------------
+char buf[10];
+int16_t bhstatus;
 
 //--------------------------------------------------------------
-#endif // __MAIN_H
+#endif // __BH1750_H

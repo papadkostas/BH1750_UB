@@ -188,7 +188,7 @@ int16_t UB_I2C3_ReadByte(uint8_t slave_adr, uint8_t adr)
 //    0   , Ok
 //  < 0   , Error
 //--------------------------------------------------------------
-int16_t UB_I2C3_WriteByte(uint8_t slave_adr, uint8_t adr, uint8_t wert)
+int16_t UB_I2C3_WriteByte(uint8_t slave_adr, uint8_t adr, uint8_t wert, uint8_t fixed)
 {
   int16_t ret_wert=0;
   uint32_t timeout=I2C3_TIMEOUT;
@@ -217,12 +217,14 @@ int16_t UB_I2C3_WriteByte(uint8_t slave_adr, uint8_t adr, uint8_t wert)
     if(timeout!=0) timeout--; else return(P_I2C3_timeout(-3));
   }
 
-  // Adresse senden
-  I2C_SendData(I2C3, adr);
+  if(fixed == 0){
+	  // Adresse senden
+	  I2C_SendData(I2C3, adr);
 
-  timeout=I2C3_TIMEOUT;
-  while (!I2C_GetFlagStatus(I2C3, I2C_FLAG_TXE)) {
-    if(timeout!=0) timeout--; else return(P_I2C3_timeout(-4));
+	  timeout=I2C3_TIMEOUT;
+	  while (!I2C_GetFlagStatus(I2C3, I2C_FLAG_TXE)) {
+		  if(timeout!=0) timeout--; else return(P_I2C3_timeout(-4));
+	  }
   }
 
   // Daten senden
@@ -253,7 +255,7 @@ int16_t UB_I2C3_WriteByte(uint8_t slave_adr, uint8_t adr, uint8_t wert)
 //    0   , Ok
 //  < 0   , Error
 //--------------------------------------------------------------
-int16_t UB_I2C3_ReadMultiByte(uint8_t slave_adr, uint8_t adr, uint8_t cnt)
+int16_t UB_I2C3_ReadMultiByte(uint8_t slave_adr, uint8_t adr, uint8_t cnt, uint8_t fixed)
 {
   int16_t ret_wert=0;
   uint32_t timeout=I2C3_TIMEOUT;
@@ -294,13 +296,14 @@ int16_t UB_I2C3_ReadMultiByte(uint8_t slave_adr, uint8_t adr, uint8_t cnt)
   while (!I2C_GetFlagStatus(I2C3, I2C_FLAG_TXE)) {
     if(timeout!=0) timeout--; else return(P_I2C3_timeout(-3));
   }
+  if(fixed == 0){
+	  // Adresse senden
+	  I2C_SendData(I2C3, adr);
 
-  // Adresse senden
-  I2C_SendData(I2C3, adr);
-
-  timeout=I2C3_TIMEOUT;
-  while ((!I2C_GetFlagStatus(I2C3, I2C_FLAG_TXE)) || (!I2C_GetFlagStatus(I2C3, I2C_FLAG_BTF))) {
-    if(timeout!=0) timeout--; else return(P_I2C3_timeout(-4));
+	  timeout=I2C3_TIMEOUT;
+	  while ((!I2C_GetFlagStatus(I2C3, I2C_FLAG_TXE)) || (!I2C_GetFlagStatus(I2C3, I2C_FLAG_BTF))) {
+		  if(timeout!=0) timeout--; else return(P_I2C3_timeout(-4));
+	  }
   }
 
   // Start-Sequenz
