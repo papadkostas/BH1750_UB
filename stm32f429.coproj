@@ -8,7 +8,7 @@
         <Option name="UseFPU" value="0"/>
         <Option name="UserEditCompiler" value=""/>
         <Option name="SupportCPlusplus" value="0"/>
-        <Option name="FPU" value="0"/>
+        <Option name="FPU" value="2"/>
         <Includepaths>
           <Includepath path="."/>
         </Includepaths>
@@ -17,6 +17,7 @@
           <Define name="USE_STDPERIPH_DRIVER"/>
           <Define name="__ASSEMBLY__"/>
           <Define name="STM32F429_439xx"/>
+          <Define name="__FPU_USED"/>
         </DefinedSymbols>
       </Compile>
       <Link useDefault="0">
@@ -177,8 +178,8 @@
     <File name=".git/refs/heads/master" path=".git/refs/heads/master" type="1"/>
     <File name="ub_lib/stm32_ub_l3gd20.h" path="ub_lib/stm32_ub_l3gd20.h" type="1"/>
     <File name=".git/objects/0b" path="" type="2"/>
-    <File name=".git/objects/a4/e29248118c88f7acd144624628cc1963fa43cb" path=".git/objects/a4/e29248118c88f7acd144624628cc1963fa43cb" type="1"/>
     <File name=".git/objects/04" path="" type="2"/>
+    <File name=".git/objects/a4/e29248118c88f7acd144624628cc1963fa43cb" path=".git/objects/a4/e29248118c88f7acd144624628cc1963fa43cb" type="1"/>
     <File name="ub_lib/stm32_ub_spi5.c" path="ub_lib/stm32_ub_spi5.c" type="1"/>
     <File name=".git/objects/ac" path="" type="2"/>
     <File name=".git/objects/0a" path="" type="2"/>
@@ -196,8 +197,8 @@
     <File name=".git/objects/b4/1acd5ce2a162076fee62c03dc1d6020660658d" path=".git/objects/b4/1acd5ce2a162076fee62c03dc1d6020660658d" type="1"/>
     <File name="syscalls.c" path="syscalls.c" type="1"/>
     <File name=".git/objects/24/d9489f28eb26df67b2aec44b271413636b6026" path=".git/objects/24/d9489f28eb26df67b2aec44b271413636b6026" type="1"/>
-    <File name=".git/objects/69/f7928d88092697d17ac00966bed4d21a7c62de" path=".git/objects/69/f7928d88092697d17ac00966bed4d21a7c62de" type="1"/>
     <File name=".git/objects/a6" path="" type="2"/>
+    <File name=".git/objects/69/f7928d88092697d17ac00966bed4d21a7c62de" path=".git/objects/69/f7928d88092697d17ac00966bed4d21a7c62de" type="1"/>
     <File name="cmsis_boot/stm32f4xx.h" path="cmsis_boot/stm32f4xx.h" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_spi.c" path="cmsis_lib/source/stm32f4xx_spi.c" type="1"/>
     <File name=".git/objects/bb" path="" type="2"/>
@@ -215,8 +216,8 @@
     <File name="cmsis_lib/include/stm32f4xx_rcc.h" path="cmsis_lib/include/stm32f4xx_rcc.h" type="1"/>
     <File name=".git/objects/78" path="" type="2"/>
     <File name=".git/objects/65/65e65df12bc66d57df82833c1f8abc12fdf4e0" path=".git/objects/65/65e65df12bc66d57df82833c1f8abc12fdf4e0" type="1"/>
-    <File name=".git/objects/55/147cdb54cfd509ce8b2441011a0c678d80ae11" path=".git/objects/55/147cdb54cfd509ce8b2441011a0c678d80ae11" type="1"/>
     <File name=".git" path="" type="2"/>
+    <File name=".git/objects/55/147cdb54cfd509ce8b2441011a0c678d80ae11" path=".git/objects/55/147cdb54cfd509ce8b2441011a0c678d80ae11" type="1"/>
     <File name="cmsis_boot/startup/startup_stm32f4xx.c" path="cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
     <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
     <File name=".git/objects/7e/44edf323cff4bb207a996f973a04cf957175e1" path=".git/objects/7e/44edf323cff4bb207a996f973a04cf957175e1" type="1"/>
@@ -227,17 +228,17 @@
     <File name="ub_lib/stm32_ub_font.c" path="ub_lib/stm32_ub_font.c" type="1"/>
     <File name=".git/objects/e7/6eb2e26f180770a033a4e43d1a2c74c799253c" path=".git/objects/e7/6eb2e26f180770a033a4e43d1a2c74c799253c" type="1"/>
     <File name=".git/objects/56" path="" type="2"/>
-    <File name=".git/objects" path="" type="2"/>
     <File name="cmsis_boot/system_stm32f4xx.c" path="cmsis_boot/system_stm32f4xx.c" type="1"/>
+    <File name=".git/objects" path="" type="2"/>
     <File name=".git/objects/31" path="" type="2"/>
     <File name=".git/objects/be/b59f90441ed555f9cdbf2edbccb68e502c8189" path=".git/objects/be/b59f90441ed555f9cdbf2edbccb68e502c8189" type="1"/>
     <File name="cmsis" path="" type="2"/>
     <File name=".git/objects/78/dda12c00bcb450f3d5fec4d795bd6568600337" path=".git/objects/78/dda12c00bcb450f3d5fec4d795bd6568600337" type="1"/>
     <File name=".git/refs/tags" path="" type="2"/>
     <File name=".git/objects/78/19eb1915e402f137982f0e294a0edc876b4b16" path=".git/objects/78/19eb1915e402f137982f0e294a0edc876b4b16" type="1"/>
+    <File name=".git/objects/33" path="" type="2"/>
     <File name=".git/objects/f0" path="" type="2"/>
     <File name="cmsis_lib/include/stm32f4xx_ltdc.h" path="cmsis_lib/include/stm32f4xx_ltdc.h" type="1"/>
-    <File name=".git/objects/33" path="" type="2"/>
     <File name=".git/objects/8f" path="" type="2"/>
     <File name="ub_lib/stm32_ub_sdram.c" path="ub_lib/stm32_ub_sdram.c" type="1"/>
     <File name=".git/objects/be" path="" type="2"/>
@@ -267,14 +268,14 @@
     <File name=".git/objects/69/8ae5d80a2ee7c61d82ed7d7164cffcbfea7b20" path=".git/objects/69/8ae5d80a2ee7c61d82ed7d7164cffcbfea7b20" type="1"/>
     <File name=".git/HEAD" path=".git/HEAD" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_i2c.c" path="cmsis_lib/source/stm32f4xx_i2c.c" type="1"/>
-    <File name=".git/objects/e7" path="" type="2"/>
     <File name=".git/objects/16/b127c0e2c8db0e0209f299f2b234792f9970b4" path=".git/objects/16/b127c0e2c8db0e0209f299f2b234792f9970b4" type="1"/>
+    <File name=".git/objects/e7" path="" type="2"/>
     <File name="cmsis_lib/source" path="" type="2"/>
     <File name=".git/objects/3f" path="" type="2"/>
     <File name=".git/objects/5e" path="" type="2"/>
     <File name=".git/index" path=".git/index" type="1"/>
-    <File name=".git/objects/f7/3188ccaae371c7a7160351dcbf6e49de4888d7" path=".git/objects/f7/3188ccaae371c7a7160351dcbf6e49de4888d7" type="1"/>
     <File name=".git/logs/refs/remotes/origin" path="" type="2"/>
+    <File name=".git/objects/f7/3188ccaae371c7a7160351dcbf6e49de4888d7" path=".git/objects/f7/3188ccaae371c7a7160351dcbf6e49de4888d7" type="1"/>
     <File name=".git/objects/0b/b54b6e57f5d22a07fe619dc6e0120c4d08650a" path=".git/objects/0b/b54b6e57f5d22a07fe619dc6e0120c4d08650a" type="1"/>
     <File name="cmsis_boot/stm32f4xx_conf.h" path="cmsis_boot/stm32f4xx_conf.h" type="1"/>
     <File name=".git/objects/e5" path="" type="2"/>
@@ -292,8 +293,8 @@
     <File name="ub_lib/stm32_ub_i2c3.h" path="ub_lib/stm32_ub_i2c3.h" type="1"/>
     <File name=".git/logs/HEAD" path=".git/logs/HEAD" type="1"/>
     <File name=".git/objects/77/8b2cd0b788e423ac1a1fd1f9a100d25c9cd3b0" path=".git/objects/77/8b2cd0b788e423ac1a1fd1f9a100d25c9cd3b0" type="1"/>
-    <File name=".git/description" path=".git/description" type="1"/>
     <File name=".git/objects/16" path="" type="2"/>
+    <File name=".git/description" path=".git/description" type="1"/>
     <File name=".git/objects/81/1e90c42226b3237e6ee61b2d2564a577af8d3e" path=".git/objects/81/1e90c42226b3237e6ee61b2d2564a577af8d3e" type="1"/>
     <File name="BH1750/BH1750.h" path="BH1750/BH1750.h" type="1"/>
     <File name=".git/objects/bb/f0688e15d7130d7bbd261476464cfe7fdbef2f" path=".git/objects/bb/f0688e15d7130d7bbd261476464cfe7fdbef2f" type="1"/>
@@ -301,7 +302,7 @@
     <File name="cmsis_lib/include" path="" type="2"/>
     <File name=".git/objects/82/7a66e6dc2ac396f0c10466da1f1175541b9e19" path=".git/objects/82/7a66e6dc2ac396f0c10466da1f1175541b9e19" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_fmc.h" path="cmsis_lib/include/stm32f4xx_fmc.h" type="1"/>
-    <File name=".git/objects/0a/18fafc301e003d348edf5cae39481d8e5fe7c3" path=".git/objects/0a/18fafc301e003d348edf5cae39481d8e5fe7c3" type="1"/>
     <File name=".git/objects/71" path="" type="2"/>
+    <File name=".git/objects/0a/18fafc301e003d348edf5cae39481d8e5fe7c3" path=".git/objects/0a/18fafc301e003d348edf5cae39481d8e5fe7c3" type="1"/>
   </Files>
 </Project>

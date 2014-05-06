@@ -14,16 +14,19 @@ int main(){
   UB_I2C3_Init();
   Delay(5000000);
   while(1){
-	  int16_t lux;
-	  lux = BH1750_Read(ONE_TIME_H_0_5LX);
-	  if(lux < 0) return 0;
-	  sprintf(buf,"Lux = %d ",lux);
-	  UB_Font_DrawString(10,40,buf,&Arial_11x18,RGB_COL_BLUE,RGB_COL_BLACK);
+	  int lux;
+	  char buf[20];
+	  lux = BH1750_Read(ONE_TIME_H_1LX);
+	  if(lux < 0){
+		  return 0;
+	  }
+	  else{
+		  sprintf(buf,"Lux = %d    ",lux);
+		  UB_Font_DrawString(10,40,buf,&Arial_11x18,RGB_COL_BLUE,RGB_COL_BLACK);
+	  }
 	  Delay(5000000);
   }
-  return 0;
 }
-
 void Delay(volatile uint32_t nCount){
   while(nCount--) {
   }
